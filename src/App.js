@@ -3,10 +3,6 @@ import './App.css';
 import { Box, Button, Tab, TableContainer, TextField ,Paper, Table, TableHead, TableRow, TableCell, TableBody ,Radio,RadioGroup,FormControlLabel,FormControl,FormLabel } from '@mui/material';
 import { TabList,TabPanel,TabContext } from '@mui/lab';
 
-function TableSection(){
-
-}
-
 function App() {
   const [name,setName]=useState("");
   const [email,setEmail]=useState("");
@@ -62,7 +58,6 @@ function App() {
         <Button variant='contained' onClick={handleSubmit}>Add To List</Button>
       </TabPanel>
       <TabPanel value='2'>
-        <TableSection/>
           <TableContainer component={Paper}>
           <Table sx={{minWidth:700}}>
             <TableHead>
